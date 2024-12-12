@@ -1,0 +1,56 @@
+/* Sayfa genel stilleri */
+.loading-page {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00000079;
+    /* Arka plan rengi */
+}
+
+/* Yükleniyor container'ı */
+.loading-container {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Yükleniyor animasyonu için logo */
+.loader {
+    font-size: 100px;
+    /* Para simgesinin boyutu */
+    animation: rotate 2s linear infinite;
+    /* Dönen animasyon */
+}
+
+/* Yükleniyor yazısı */
+.loading-container p {
+    color: yellow;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Dönen animasyon */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Fade-in animasyonu */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
